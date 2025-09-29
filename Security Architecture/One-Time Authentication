@@ -1,0 +1,22 @@
+import pyotp
+import qrcode
+
+# Step 1: Generate a secret key for a new user (store in DB)
+
+secret = pyotp.random_base32()
+print("User's secret key (store securely):", secret)
+
+# Step 2: Create a QR Code for Google Authenticator
+
+totp = pyotp.TOTP(secret)
+uri = totp.provisioning_uri(name="user@example.com", issuer_name="MyApp")
+qrcode.make(uri).save("qrcode.png")
+print("Scan 'qrcode.png' with Google Authenticator")
+
+# Step 3: During login, verify the code entered by the user
+
+user_code = input("Enter the 6-digit code: ")
+if totp.verify(user_code):
+    print("Login success (2FA passed)")
+else:
+    print("Invalid code, login denied")
