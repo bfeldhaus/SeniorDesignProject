@@ -1,0 +1,22 @@
+from duo_client import Auth
+
+# Setup Duo client
+
+client = Auth(
+    ikey="YOUR_INTEGRATION_KEY",
+    skey="YOUR_SECRET_KEY",
+    host="api-xxxxxxxx.duosecurity.com"
+)
+
+# Send push request
+
+response = client.auth(
+    username="user@example.com",
+    factor="push",
+    device="auto"  # sends to user’s default device
+)
+
+if response['result'] == 'allow':
+    print("User approved login")
+else:
+    print("User denied login")
