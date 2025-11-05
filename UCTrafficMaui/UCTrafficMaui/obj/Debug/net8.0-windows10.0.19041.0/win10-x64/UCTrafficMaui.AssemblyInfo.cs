@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UCTrafficMaui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+4b35cdc49af5c0ca7b7b503e9e6ce2dca531f657")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e050490ce88633029c1a623c9e0a1e31e72eddfa")]
 [assembly: System.Reflection.AssemblyProductAttribute("UCTrafficMaui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UCTrafficMaui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
