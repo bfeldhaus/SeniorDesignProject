@@ -1,10 +1,16 @@
-﻿namespace UCTrafficMaui
+﻿using UCTrafficMaui.Pages;
+
+namespace UCTrafficMaui;
+
+public partial class AppShell : Shell
 {
-    public partial class AppShell : Shell
+    public AppShell()
     {
-        public AppShell()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+
+        // Register navigation routes
+        Routing.RegisterRoute(nameof(ProfileInfoPage), typeof(ProfileInfoPage));
+        Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
+        Routing.RegisterRoute(nameof(AboutPage), typeof(AboutPage));
     }
 }

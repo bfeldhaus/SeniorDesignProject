@@ -20,6 +20,12 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+
+        private async void OnOpenProfileClicked(object sender, EventArgs e)
+{
+    await Shell.Current.GoToAsync(nameof(UCTrafficMaui.Pages.ProfileInfoPage));
+}
+
     }
 
 }
