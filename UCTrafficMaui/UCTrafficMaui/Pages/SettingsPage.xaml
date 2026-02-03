@@ -9,5 +9,9 @@
         <Label Text="Settings"
                FontSize="24"
                FontAttributes="Bold" />
+
+    <Button Text="Report Issue  >"
+        Clicked="ReportIssue_Clicked" />
+           
     </VerticalStackLayout>
 </ContentPage>
