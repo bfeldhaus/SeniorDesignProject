@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UCTrafficMaui.MainPage">
 
+
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -20,9 +21,16 @@
 
             <Label
                 Text="Welcome to &#10;.NET Multi-platform App UI"
-                Style="{StaticResource SubHeadline}"
+
+Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+            <Button
+                Text="Profile"
+                BackgroundColor="#C7B6E6"
+                TextColor="Black"
+                Clicked="OnOpenProfileClicked"
+                HorizontalOptions="Fill" />
 
             <Label
                 Text="&#xf015;"  
