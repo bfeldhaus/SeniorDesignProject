@@ -8,6 +8,7 @@
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
@@ -26,6 +27,8 @@
     await Shell.Current.GoToAsync(nameof(UCTrafficMaui.Pages.ProfileInfoPage));
 }
 
+=======
+>>>>>>> origin/main
     }
 
 }

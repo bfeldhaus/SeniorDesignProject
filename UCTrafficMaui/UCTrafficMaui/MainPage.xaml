@@ -32,12 +32,14 @@ Style="{StaticResource SubHeadline}"
                 Clicked="OnOpenProfileClicked"
                 HorizontalOptions="Fill" />
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
+            <Label
+                Text="&#xf015;"  
+                FontFamily="Font Awesome 7 Free-Solid-900"
+                FontSize="40"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                SemanticProperties.Description="Home icon" />
+
         </VerticalStackLayout>
     </ScrollView>
 
